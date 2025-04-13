@@ -10,15 +10,38 @@ A fully functional Airbnb clone that enables users to list, search, and book ren
 🔹 Responsive Design – Works seamlessly on all devices 📱💻
 
 🚀 Tech Stack:
-✅ Frontend – React.js / Next.js ⚛️
-✅ Backend – Node.js / Express.js 🛠️
-✅ Database – MongoDB🍃 
-✅ Authentication – Firebase / Auth0 🔐
-✅ Hosting – Vercel / Netlify 
+
+Frontend: HTML 🖥️, CSS 🎨, JavaScript ⚙️, EJS 📝
+Backend: Node.js 🟩, Express.js 🚀
+Database: MongoDB 💾, Mongoose 🐍
+Auth: JWT 🔐
+Other: Cloudinary ☁️, Mapbox 🗺️, Git 🧑‍💻, GitHub 🐙
+Deployment: Render 🌐
 
 
 🚀 Project Structure
 airbnb-clone/
-├── frontend/       # Frontend code
-├── backend/        # Backend code
-└── README.md       # Main documentation
+├── node_modules/
+├── public/              # Static files (CSS, JS, Images)
+│   ├── css/
+│   ├── js/
+│   └── images/
+├── uploads/             # Uploaded images (if using local storage)
+├── views/               # EJS templates
+│   ├── partials/        # Navbar, footer, etc.
+│   ├── listings/        # Listing-related pages
+│   └── users/           # Login, signup pages
+├── routes/              # Route handlers
+│   ├── listings.js
+│   ├── users.js
+│   └── index.js
+├── models/              # Mongoose models
+│   ├── User.js
+│   └── Listing.js
+├── middleware/          # Custom middlewares
+├── utils/               # Utility functions (e.g. cloudinary config)
+├── .env                 # Environment variables
+├── .gitignore
+├── app.js               # Main application file
+├── package.json
+└── README.md
